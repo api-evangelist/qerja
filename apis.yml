@@ -1,7 +1,24 @@
 aid: qerja
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/qerja.png
 name: Qerja
-description: Qerja is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: PT Qerja Manfaat Bangsa (Qerja) is an Indonesian human-resources company operating an
+  end-to-end HR product ecosystem for employers, established in 2007 and later part of the PT M Cash
+  Integrasi Tbk technology group. In 2019 it acquired Karir.com, Indonesia's first job portal (since
+  1998), and reports serving over 50,000 clients and 8 million member users across the country. The
+  public presence is a corporate marketing site (qerjagroup.com) covering its HR services, clients,
+  and user demographics; no public developer portal, API documentation, or machine-readable API
+  surface was found during enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/qerja/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Human Resources
+- Recruitment
+- Jobs
+- HR Technology
+- Indonesia
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +43,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/qerja-domain-security.yml
 - type: Website
   url: https://qerjagroup.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
